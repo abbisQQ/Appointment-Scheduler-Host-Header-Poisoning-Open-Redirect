@@ -8,14 +8,24 @@ An attacker can use this vulnerability to redirect users to a malicious website,
 
 Proof of concept
 I run the application on my local machine on port 8080
- 
-The application redirects to the /login if an unauthenticated use tries to login.
- 
- 
 
+![image](https://github.com/user-attachments/assets/c88e2589-21a0-4de1-9f7d-15ead5569c9f)
+
+ 
+The application redirects to the /login if an unauthenticated use tries to visit the web application.
+
+![image](https://github.com/user-attachments/assets/eeddc3e8-5b93-4340-bf44-cafbe19b74bf)
+
+![image](https://github.com/user-attachments/assets/d9307fe8-1395-44c1-a38f-23c2e05f685b)
+
+ 
 Currently, the application accepts the Host header without any validation or checks.
 Changing the host header from localhost to example.com we can see in the images below that the application redirects the user to that web site.
- 
+
+![image](https://github.com/user-attachments/assets/a9535fb2-bc5c-4cc3-a6d2-bd2b0273283f)
+
+![image](https://github.com/user-attachments/assets/20b15442-7324-4910-86bb-8c39a9f09d40)
+
  
 This demonstrates that an attacker can supply an arbitrary Host header, potentially redirecting users to malicious websites, thereby facilitating various attacks.
 
