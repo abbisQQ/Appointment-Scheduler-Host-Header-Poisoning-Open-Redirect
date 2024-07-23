@@ -10,23 +10,23 @@ An attacker can use this vulnerability to redirect users to a malicious website,
 Proof of concept
 I run the application on my local machine on port 8080
 
-![image](https://github.com/user-attachments/assets/c88e2589-21a0-4de1-9f7d-15ead5569c9f)
 
- 
+ ![application](https://github.com/user-attachments/assets/da0af86d-636b-4cf6-8c4c-3c8130768025)
+
 The application redirects to the /login if an unauthenticated use tries to visit the web application.
 
-![image](https://github.com/user-attachments/assets/eeddc3e8-5b93-4340-bf44-cafbe19b74bf)
 
-![image](https://github.com/user-attachments/assets/d9307fe8-1395-44c1-a38f-23c2e05f685b)
+![normal_host1](https://github.com/user-attachments/assets/4171f5c3-2bad-4a20-9b07-f264f21acc74)
 
- 
+![normalhost1 1](https://github.com/user-attachments/assets/2f1d5097-fa63-45d8-8920-497a558942e2)
+
 Currently, the application accepts the Host header without any validation or checks.
 Changing the host header from localhost to example.com we can see in the images below that the application redirects the user to that web site.
 
-![image](https://github.com/user-attachments/assets/a9535fb2-bc5c-4cc3-a6d2-bd2b0273283f)
 
-![image](https://github.com/user-attachments/assets/20b15442-7324-4910-86bb-8c39a9f09d40)
+![Arbitary host1](https://github.com/user-attachments/assets/065a3097-abb4-4afc-8586-e5c6691c7d8c)
 
+![Arbitary host2 2](https://github.com/user-attachments/assets/05a378ed-1190-4d00-bd04-51a20ae4e079)
  
 This demonstrates that an attacker can supply an arbitrary Host header, potentially redirecting users to malicious websites, thereby facilitating various attacks.
 
