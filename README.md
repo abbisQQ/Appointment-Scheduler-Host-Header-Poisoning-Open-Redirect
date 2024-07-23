@@ -23,8 +23,7 @@ The application redirects to the /login if an unauthenticated use tries to visit
 Currently, the application accepts the Host header without any validation or checks.
 Changing the host header from localhost to example.com we can see in the images below that the application redirects the user to that web site.
 
-
-![Arbitary host1](https://github.com/user-attachments/assets/065a3097-abb4-4afc-8586-e5c6691c7d8c)
+![redirect](https://github.com/user-attachments/assets/52b2790e-0bc9-4d81-a967-01de6f47cb32)
 
 ![Arbitary host2 2](https://github.com/user-attachments/assets/05a378ed-1190-4d00-bd04-51a20ae4e079)
  
