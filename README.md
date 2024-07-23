@@ -15,18 +15,17 @@ I run the application on my local machine on port 8080
 
 The application redirects to the /login if an unauthenticated use tries to visit the web application.
 
+![normat redirect 1](https://github.com/user-attachments/assets/40050ab1-debe-4143-a4ea-257cc0362f75)
 
-![normal_host1](https://github.com/user-attachments/assets/4171f5c3-2bad-4a20-9b07-f264f21acc74)
-
-![normalhost1 1](https://github.com/user-attachments/assets/2f1d5097-fa63-45d8-8920-497a558942e2)
+![normat redirect 2](https://github.com/user-attachments/assets/0ce1626c-239b-4001-807a-aa7fe16ce1a3)
 
 Currently, the application accepts the Host header without any validation or checks.
 Changing the host header from localhost to example.com we can see in the images below that the application redirects the user to that web site.
 
-![redirect](https://github.com/user-attachments/assets/52b2790e-0bc9-4d81-a967-01de6f47cb32)
+![arbitary 1](https://github.com/user-attachments/assets/2c4e0bae-d254-4f53-bdaa-06a7f3637e03)
 
-![Arbitary host2 2](https://github.com/user-attachments/assets/05a378ed-1190-4d00-bd04-51a20ae4e079)
- 
+ ![arbitary 2](https://github.com/user-attachments/assets/1efbbcf0-d961-40cb-a21a-c8be3a82d329)
+
 This demonstrates that an attacker can supply an arbitrary Host header, potentially redirecting users to malicious websites, thereby facilitating various attacks.
 
 Mitigation:
