@@ -1,4 +1,4 @@
-# Appointment-Scheduler-Host-Header-Poisoning-Open-Redirect
+#CVE-2024-42671 Appointment-Scheduler-Host-Header-Poisoning-Open-Redirect 
 A common vulnerability found in a github repository.
 https://github.com/slabiak
 
@@ -30,3 +30,5 @@ This demonstrates that an attacker can supply an arbitrary Host header, potentia
 
 Mitigation:
 To mitigate this vulnerability, ensure that the Host header is properly validated against a whitelist of allowed values. Additionally, avoid using the Host header to construct URLs for redirects or other security-critical operations.
+
+Reference: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-42671
