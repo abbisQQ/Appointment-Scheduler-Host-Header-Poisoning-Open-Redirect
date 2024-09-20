@@ -1,6 +1,6 @@
 #CVE-2024-42671 Appointment-Scheduler-Host-Header-Poisoning-Open-Redirect 
 A common vulnerability found in a github repository.
-https://github.com/slabiak
+[https://github.com/slabiak](https://github.com/slabiak/AppointmentScheduler)
 
 Host Header Poisoning in the context of Open Redirect is a security vulnerability where an attacker manipulates the Host header of an HTTP request to inject a malicious value. When a web server relies on the Host header to construct URLs for redirects or other operations without proper validation, it can be tricked into redirecting users to an attacker-controlled domain. This can be exploited to perform phishing attacks, steal user credentials, or distribute malware.
 
